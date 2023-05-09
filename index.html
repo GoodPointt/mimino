@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACTElEQVR4nO2WO2gVQRSGPxUTNFpoYZXCKmBsfBWCGlOKYCkiEggqohC0sLARzuyV4CNYxMYHNmoRsBACCpYRQQQVFAsFLUQRFMFXJaj5Zda9snfv7N65cK+kyA+nmT1nzj/n/DNnYR5zGTJWyzEtxxcZL+U4IlgQEdcvx4kmM/rjk0/QJ8crOdRgxuGWsTU2NsX9jd0QT8CxN7iJ40XLWGOghMBAPAHjZMkmv1rGTtIr43Mh9pOMnngCjpESAq8jD7Ap6/1xGYdUY310cg8Zq+T4FiAxTgAyxoLCaxbiGLGQY4+MH7nk92QsKyEwmt6WsG7q5m/TaDQBD9VYm5bRsa+tHv5vyNghY7ZFBfJamvUx4c3OslwJW5Swrelbwq6038ZggMSQjDORNhQ6xVYZM3L8/Hd1Juhr8HHcyZ3ikoyFJRXZGRJheQkvs1jGh0CpjhYIvCv4TPnYgs94UICOqXICxrqSXr2pJ5CxssTnts6zJPM5l1t/nL6oxnCRZIjAwQrRjGQ+wxWimpFxobB2tzJpHnJcrCDw3E9BOY61ofKHXszEQo5HlRt69ft+N65PlyR/qtOsiE9u9BRevJDdl/G2kMhr4lRxWvpnPDp5bnCobctKLGN/NjeetPXTUUc6rRpP9jWyz0vpBOQ4kNv0un9c0pfQuCrjeymBSXo7Q8BSDVzxPxsyNgfaExrL0k0WdYRAHaqxpqheGbcqWtD96SjH+woCg90nYBWCTNjdfQKOZ3L8zq7aNTk+ynggxw0lbO86AY+Oi20ecwl/ABYmTp0EihQsAAAAAElFTkSuQmCC" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMINO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    
+    <script type="module" crossorigin src="/mimino/assets/swiper-2810fb53.js"></script>
+    <link rel="stylesheet" href="/mimino/assets/swiper-1d8e731e.css">
+  </head>
+  <body>
+    <header><div class="header">
+  <div class="header-container">
+    <a class="header-logo" href="./index.html">MIMIHO</a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="restaurant-link" href="./restaurant.html">Ресторан</a>
+
+          <a class="tel-link" href="tel:+380955559533">
+            <svg class="nav-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-phone"></use>
+            </svg>
+            <p class="nav-tel">095 555 95 33</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="hotel-link" href="./hotel.html">Готель</a>
+
+          <a class="tel-link" href="tel:+380668491089">
+            <svg class="nav-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-phone"></use>
+            </svg>
+            <p class="nav-tel">066 849 10 89</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="contacts">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a
+            class="contacts-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-intagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="contacts-item">
+          <a
+            class="contacts-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <svg class="contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="contacts-item">
+          <a
+            class="contacts-link"
+            href="https://web.telegram.org/"
+            target="_blank"
+          >
+            <svg class="contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="header-adress">
+      <a class="adress-link" href="">
+        <svg class="adress-icon">
+          <use href="../img/icons.svg#icon-location"></use>
+        </svg>
+        <span class="adress-text"
+          >Україна, м. Полтава, вул. Маршала Бірюзова, 15</span
+        >
+      </a>
+    </div> -->
+  </div>
+</div>
+</header>
+
+    <main>
+      <!-- OCHERETKO OLEG -->
+<section class="hero-main">
+  <div class="container container-position">
+    <a 
+      href="https://goo.gl/maps/gsLoxivQWbPbsx788"
+      target="_blank"
+      title="Ресторанно-готельний комплекс"
+    >
+      <address class="adress-hotel">
+        <svg class="icon-svg-location">
+          <use href="/mimino/assets/symbol-defs-b2b464a2.svg#icon-location"></use>
+        </svg>
+        <p class="hotel-location">
+          Україна, м. Полтава,<br />вул. Маршала Бірюзова, 15
+        </p>
+      </address>
+    </a>
+    <div class="info-hotel">
+      <h1 class="hero-title">MIMIH<span>O</span></h1>
+      <h2 class="hero-main-title">Ресторанно-готельний комплекс</h2>
+      <p class="hero-main-big">СМАК ЖИТТЯ 24/7</p>
+      <div class="dislocation">
+        <!-- Кнопка “Забронювати столик” має відкривати модальне вікно BOOR TABLE MODAL WINDOW -->
+
+        <button
+          class="btn-main-1 open_modal"
+          data-modal-id="#modal_table"
+          type="button"
+        >
+          Забронювати столик
+        </button>
+
+        <!-- Кнопка “Забронювати номер” має відкривати модальне вікно BOOR ROOM MODAL WINDOW. -->
+        <button
+          class="btn-main-2 open_modal"
+          data-modal-id="#modal_room"
+          type="button"
+        >
+          Забронювати номер
+        </button>
+      </div>
+    </div>
+    <ul class="hero-social-main">
+      <li class="hero-social-item">
+        <a target="_blank" href="https://www.instagram.com/">
+          <svg class="icon">
+            <use href="/mimino/assets/symbol-defs-b2b464a2.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="hero-social-item">
+        <a target="_blank" href="https://www.facebook.com/">
+          <svg class="icon">
+            <use href="/mimino/assets/symbol-defs-b2b464a2.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="hero-social-item">
+        <a target="_blank" href="https://t.me/c/1135908310/588">
+          <svg class="icon">
+            <use href="/mimino/assets/symbol-defs-b2b464a2.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="about-restaurant-section">
+  <div class="container">
+    <div class="about-restaurant-one-blok">
+      <div class="about-restaurant-description">
+        <h2 class="visually-hidden">About our restaurant</h2>
+        <p class="about-restaurant-amet">Amet minim mollit non</p>
+        <h3 class="about-restaurant-mimino">MIMIHO</h3>
+        <p class="about-restaurant-non">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div 
+      class="picture-restaurant">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/mimino/assets/restaurant-interior-desktop-1x-f72ed4f4.jpg 1x, /mimino/assets/restaurant-interior-desktop-2x-ac6467d2.jpg 2x"
+          />
+          <source
+            media="(min-width: 1024px) and (max-width: 1279px)"
+            srcset="/mimino/assets/restaurant-interior-desktop-1x-f72ed4f4.jpg 1x, /mimino/assets/restaurant-interior-desktop-2x-ac6467d2.jpg 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="/mimino/assets/restaurant-interior-mobile-1x-27ec1770.jpg 1x, /mimino/assets/restaurant-interior-mobile-2x-e7b855ca.jpg 2x"
+          />
+
+          <img
+            class="about-restaurant-img-one"
+            src="/mimino/assets/restaurant-interior-desktop-1x-f72ed4f4.jpg"
+            alt="our-restaraunt"
+            width="460"
+            height="574"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div  class="about-restaurant-block">
+      <picture >
+        <source
+          media="(min-width: 1280px)"
+          srcset="/mimino/assets/about-restaurant-desktop-1x-2ca0dba5.jpg 1x, /mimino/assets/about-restaurant-desktop-2x-c9ef448d.jpg 2x"
+        />
+        <source
+          media="(min-width: 1024px) and (max-width: 1279px)"
+          srcset="/mimino/assets/about-restaurant-desktop-1x-2ca0dba5.jpg 1x, /mimino/assets/about-restaurant-desktop-2x-c9ef448d.jpg 2x"
+        />
+        <source
+          media="(max-width: 1023px)"
+          srcset="/mimino/assets/about-restaurant-mobile-1x-2fa7dde8.jpg 1x, /mimino/assets/about-restaurant-mobile-2x-8ad0f705.jpg 2x"
+        />
+        <img
+          class="about-restaurant-img-two"
+          src="/mimino/assets/about-restaurant-desktop-1x-2ca0dba5.jpg"
+          alt="our-restaraunt"
+          width="460"
+          height="574"
+        />
+      </picture>
+      <p class="about-restaurant-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+  </div>
+  <div class="container about_restaurant_slider">
+    <div class="carousel_wrapper right">
+      <ul class="carousel carousel_right" id="about_restaurant">
+        <li>
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="/mimino/assets/slider-restaurant-1-mobile-1x-45f4f80a.jpg , /mimino/assets/slider-restaurant-1-mobile-2x-cc638991.jpg 2x"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="/mimino/assets/slider-restaurant-1-desktop-1x-3a2154d5.jpg , /mimino/assets/slider-restaurant-1-desktop-2x-29e8ebdf.jpg 2x"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/mimino/assets/slider-restaurant-1-tablet-1x-832940aa.jpg , /mimino/assets/slider-restaurant-1-tablet-2x-fa25c41e.jpg 2x"
+            />
+            <img
+              src="/mimino/assets/slider-restaurant-1-mobile-1x-45f4f80a.jpg"
+              alt=""
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="/mimino/assets/slider-restaurant-2-mobile-1x-60f011fc.jpg , /mimino/assets/slider-restaurant-2-mobile-2x-4c590df9.jpg 2x"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="/mimino/assets/slider-restaurant-2-desktop-1x-de8623f3.jpg , /mimino/assets/slider-restaurant-2-desktop-2x-e99aed01.jpg 2x"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/mimino/assets/slider-restaurant-2-tablet-1x-c572b2e7.jpg , /mimino/assets/slider-restaurant-2-tablet-2x-ad556dd0.jpg 2x"
+            />
+            <img
+              src="/mimino/assets/slider-restaurant-2-mobile-1x-60f011fc.jpg"
+              alt=""
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="/mimino/assets/slider-restaurant-2-mobile-1x-60f011fc.jpg , /mimino/assets/slider-restaurant-2-mobile-2x-4c590df9.jpg 2x"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="/mimino/assets/slider-restaurant-2-desktop-1x-de8623f3.jpg , /mimino/assets/slider-restaurant-2-desktop-2x-e99aed01.jpg 2x"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/mimino/assets/slider-restaurant-2-tablet-1x-c572b2e7.jpg , /mimino/assets/slider-restaurant-2-tablet-2x-ad556dd0.jpg 2x"
+            />
+            <img
+              src="/mimino/assets/slider-restaurant-2-mobile-1x-60f011fc.jpg"
+              alt=""
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="paginator_right" id="slider_2">
+        <ul class="carousel_right_arrow carousel_arrow">
+          <li class="prev">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_left"></use>
+            </svg>
+          </li>
+          <li class="next">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_right"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="details-restaurant">
+  <div class="container add">
+    <div class="textandbuttons">
+      <div class="alltexts">
+        <p class="text1">MIMIHO</p>
+        <h2 class="headtext">Ресторан</h2>
+        <p class="text2">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+    
+      <div class="section_slider">
+        <div class="carousel_wrapper right">
+          <ul class="carousel carousel_right" id="details_restaurant_slider">
+            <li>
+              <img src="/mimino/assets/rest-det-img2-2fd70721.jpg" alt="" />
+            </li>
+            <li>
+              <img src="/mimino/assets/rest-det-img1-d5134ee9.jpg" alt="" />
+            </li>
+            <li>
+              <img src="/mimino/assets/rest-det-img3-cb7aec2c.jpg" alt="" />
+            </li>
+          </ul>
+          <div class="paginator_right" id="slider_1">
+            <ul class="carousel_right_arrow carousel_arrow">
+              <li class="prev">
+                <svg class="icon" height="32" width="32">
+                  <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_left"></use>
+                </svg>
+              </li>
+              <li class="next">
+                <svg class="icon" height="32" width="32">
+                  <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button
+            type="button"
+            class="modal-open-btn open_modal"
+            data-modal-id="#modal_table"
+          >
+            Забронювати столик
+          </button>
+
+          <a class="link-to-restaurantpage" href="./restaurant.html#menu-list"
+            >Переглянути меню</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section  class="about-hotel">
+  <div class="container">
+    <h2 class="visually-hidden">About-hotel</h2>
+    <p class="about-hotel-pre-title">Amet minim mollit non</p>
+    <h3 class="about-title">MIMIH<span class="span-title">O</span> </h3>
+    <ul class="about-hotel-list">
+      <li class="about-hotel-item">
+        <p class="about-hotel-text-1">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <div class="pictures-hotel">
+          <picture >
+            <source
+              media="(min-width: 1280px)"
+              srcset="/mimino/assets/about-hotel-1-6bf9d14b.jpg 1x, /mimino/assets/about-hotel-1-2x-06487002.jpg 2x"
+            />
+            <source
+              media="(min-width: 1024px) and (max-width: 1279px)"
+              srcset="/mimino/assets/about-hotel-tab-1-949d81b3.jpg 1x, /mimino/assets/about-hotel-tab-1-2x-a2060dbb.jpg 2x"
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="/mimino/assets/about-hotel-mob-1-530e87ea.jpg 1x, /mimino/assets/about-hotel-mob-1-2x-1a85eac2.jpg 2x"
+            />
+            <img
+              src="/mimino/assets/about-hotel-mob-1-530e87ea.jpg"
+              alt="modern-studio-apartment"
+              width="460"
+              height="574"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="about-hotel-item flex">
+        <p  class="about-hotel-text-2">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <div  class="pictures-hotel-position">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/mimino/assets/about-hotel-2-3174fb37.jpg 1x, /mimino/assets/about-hotel-2-2x-dde669b6.jpg 2x"
+            />
+            <source
+              media="(min-width: 1024px) and (max-width: 1279px)"
+              srcset="/mimino/assets/about-hotel-tab-2-3f1dd309.jpg 1x, /mimino/assets/about-hotel-tab-2-2x-a1042519.jpg 2x"
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="/mimino/assets/about-hotel-mob-2-ad0c39f4.jpg 1x, /mimino/assets/about-hotel-mob-2-2x-8ea4fc45.jpg 2x"
+            />
+            <img
+              src="/mimino/assets/about-hotel-mob-2-ad0c39f4.jpg"
+              alt="hotel"
+              width="460"
+              height="574"
+            />
+          </picture>
+        </div>
+      </li>
+    </ul>
+    <div class="slider-about-hotel"></div>
+  </div>
+</section>
+
+      <section class="dh-section">
+  <div class="container">
+    <div class="dh-text-wrapper">
+      <div class="dh_text_content">
+        <p class="dh-logo">MIMIHO</p>
+        <h2 class="dh-title">Готель</h2>
+
+        <p class="dh-text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+    </div>
+
+    <div class="section_slider">
+      <div class="carousel_wrapper right">
+        <ul class="carousel carousel_right" id="dh_section_slider">
+          <li>
+            <img src="/mimino/assets/bed_in_the_room@1x-5d944250.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/mimino/assets/breakfast@1x-864af07f.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/mimino/assets/reception@1x-366e01b6.jpg" alt="" />
+          </li>
+          <li>
+            <img
+              src="/mimino/assets/details_restaurant_slider_2-75ada92e.jpg"
+              alt=""
+            />
+          </li>
+        </ul>
+        <div class="paginator_right" id="dh_section_paginator">
+          <ul class="carousel_right_arrow carousel_arrow">
+            <li class="prev">
+              <svg class="icon" height="32" width="32">
+                <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_left"></use>
+              </svg>
+            </li>
+            <li class="next">
+              <svg class="icon" height="32" width="32">
+                <use href="/mimino/assets/icons-c0ccf45c.svg#icon-arrow_right"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="buttons">
+        <!-- ROOM MODAL -->
+        <button
+          class="dh-button open_modal"
+          data-modal-id="#modal_room"
+          type="button"
+        >
+          Забронювати номер
+        </button>
+
+        <a class="dh-link" href="./hotel.html">Переглянути ціни</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- KATERYNA SELYVONENKO -->
+<section class="contacts">
+  <div class="container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <div class="contacts-division-1">
+      <h3 class="contacts-heading-2">MIMIHO</h3>
+      <p class="contacts-paragaph">Ресторанно-готельний комплекс</p>
+      <ul class="contacts-list">
+        <!-- РЕСТОРАН -->
+        <li class="contacts-list-item-0-rest">
+          <p class="contacts-paragaph-1">Ресторан</p>
+          <ul class="contacts-list-2">
+            <li class="contacts-list-item">
+              <!-- всередині коробочки -->
+              <ul class="contacts-box-rest">
+                <li class="contacts-list-inside">
+                  <svg class="contacts-phone-icon" width="24" height="24">
+                    <use href="/mimino/assets/icons-c0ccf45c.svg#icon-phone"></use>
+                  </svg>
+                </li>
+
+                <li class="contacts-list-inside">
+                  <a class="contacts-item" href="tel:+380955559533"
+                    >095 555 95 33</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- ГОТЕЛЬ -->
+        <li class="contacts-list-item-0">
+          <p class="contacts-paragaph-1">Готель</p>
+          <ul class="contacts-list-3">
+            <li class="contacts-list-item-1">
+              <ul class="contacts-box">
+                <!-- всередині коробочки -->
+                <li class="contacts-list-inside">
+                  <svg class="contacts-phone-icon" width="24" height="24">
+                    <use href="/mimino/assets/icons-c0ccf45c.svg#icon-phone"></use>
+                  </svg>
+                </li>
+
+                <li class="contacts-list-inside-1">
+                  <a class="contacts-item-hotel-1" href="tel:+380668491089"
+                    >066 849 10 89</a
+                  >
+                </li>
+
+                <li class="contacts-list-inside">
+                  <a class="contacts-item-hotel-2" href="tel:+380672758540"
+                    >067 275 85 40</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- всередині коробочки -->
+            <li class="contacts-list-item-2">
+              <ul class="contacts-box-1">
+                <li class="contacts-list-inside">
+                  <svg class="contacts-phone-icon" width="24" height="24">
+                    <use href="/mimino/assets/icons-c0ccf45c.svg#icon-location"></use>
+                  </svg>
+                </li>
+
+                <li class="contacts-list-inside-2">
+                  <a
+                    class="contacts-address"
+                    href="https://goo.gl/maps/rWrmUMpZLwgkyBE68"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts-division-2">
+
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4424.301574257875!2d34.526088569895606!3d49.5997642368352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f34ac947%3A0xbb948724f7cf0b61!2z0JPQvtGC0LXQu9GM0L3Qvi3RgNC10YHRgtC-0YDQsNC90L3QuNC5INC60L7QvNC_0LvQtdC60YEgItCc0ZbQvNGW0L3QviI!5e1!3m2!1suk!2sbg!4v1677067674248!5m2!1suk!2sbg"   allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer><div class="footer-background">
+  <div class="footer">
+    <div class="footer-logo-wrapper">
+      <a class="footer-logo" href="./index.html">MIMIHO</a>
+    </div>
+
+    <div class="footer-wrapper">
+      <ul class="footer-nav-list">
+        <li><a class="footer-nav-link" href="./index.html">Головна</a></li>
+        <li>
+          <a class="footer-nav-link" href="./restaurant.html">Ресторан</a>
+        </li>
+        <li><a class="footer-nav-link" href="./hotel.html">Готель</a></li>
+      </ul>
+
+      <ul class="footer-contacts-list">
+        <li>
+          <a
+            class="footer-contacts-link"
+            href="https://web.telegram.org/"
+            target="_blank"
+          >
+            <span class="footer-contacts-link-text">Telegram</span>
+            <svg class="footer-contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="footer-contacts-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <span class="footer-contacts-link-text">Facebook</span>
+            <svg class="footer-contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="footer-contacts-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <span class="footer-contacts-link-text">Instagram</span>
+            <svg class="footer-contacts-icon">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-intagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+
+    <div id="modal_room" class="modal">
+  <div class="modal_container">
+    <button class="modal_close" type="button">
+      <svg class="icon" width="24" height="24">
+        <use href="/mimino/assets/icons-c0ccf45c.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal_title">ЗАБРОНЮВАТИ НОМЕР</h3>
+    <form class="book_room_modal modal_form">
+      <div class="form_group">
+        <input
+          class="modal_input"
+          type="text"
+          id="name"
+          placeholder="Ваше ім’я"
+        />
+        <label class="modal_label" for="name">На кого забронювати номер?</label>
+      </div>
+      <div class="form_group">
+        <input
+          type="tel"
+          id="phone-book-room"
+          name="phone"
+          class="modal_input"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="+38 (___) ___-__-__"
+        />
+        <label class="modal_label" for="phone-book-room">Номер телефону</label>
+      </div>
+      <div class="form_group">
+        <div class="form_group_right">
+          <div class="select_wrapper">
+            <select
+              class="modal_select"
+              id="category_room"
+              name="category_room"
+            >
+              <option value disabled selected>Двомісний люкс</option>
+              <option value="Двомісний люкс">Двомісний люкс</option>
+              <option value="select_2">select_2</option>
+              <option value="select_3">select_2</option>
+            </select>
+            <svg class="icon" width="24px" height="24px">
+              <use href="/mimino/assets/icons-c0ccf45c.svg#icon-select_arrow"></use>
+            </svg>
+          </div>
+          <label class="modal_label" for="name">Категорія номеру</label>
+        </div>
+      </div>
+      <div class="form_group">
+        <div class="select_wrapper">
+          <select class="modal_select" id="from" name="from">
+            <option value disabled selected>Сьогодні</option>
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+          </select>
+          <svg class="icon" width="24px" height="24px">
+            <use href="/mimino/assets/icons-c0ccf45c.svg#icon-select_arrow"></use>
+          </svg>
+        </div>
+        <label class="modal_label" for="from">Дата заїзду</label>
+      </div>
+      <div class="form_group">
+        <div class="select_wrapper">
+          <select class="modal_select" id="till" name="till">
+            <option value disabled selected>Сьогодні</option>
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+          </select>
+          <svg class="icon" width="24px" height="24px">
+            <use href="/mimino/assets/icons-c0ccf45c.svg#icon-select_arrow"></use>
+          </svg>
+        </div>
+        <label class="modal_label" for="till">Дата виїзду</label>
+      </div>
+      <button class="modal_btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
+
+    <div id="modal_table" class="modal">
+  <div class="modal_container">
+    <button class="modal_close" type="button">
+      <svg class="icon" width="24" height="24">
+        <use href="/mimino/assets/icons-c0ccf45c.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal_title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+    <form class="book_table_modal modal_form">
+      <div class="form_group">
+        <input
+          class="modal_input"
+          type="text"
+          id="user-name"
+          placeholder="Ваше ім’я"
+        />
+        <label class="modal_label" for="user-name"
+          >На кого забронювати столик?</label
+        >
+      </div>
+      <div class="form_group">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="modal_input"
+          placeholder="+38 (___) ___-__-__"
+        />
+        <label class="modal_label" for="phone">Номер телефону</label>
+      </div>
+      <div class="form_group">
+        <div class="select_wrapper">
+          <select class="modal_select" id="people_number" name="people_number">
+            <option style="display: none" disabled selected>2</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+          </select>
+          <svg class="icon" width="24px" height="24px">
+            <use href="/mimino/assets/icons-c0ccf45c.svg#icon-select_arrow"></use>
+          </svg>
+        </div>
+        <label class="modal_label" for="people_number"
+          >Столик на яку кількість осіб?</label
+        >
+      </div>
+      <div class="form_group">
+        <div class="select_wrapper">
+          <select class="modal_select" id="date" name="date">
+            <option style="display: none" value="today" disabled selected>
+              Сьогодні
+            </option>
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+          </select>
+          <svg class="icon" width="24px" height="24px">
+            <use href="/mimino/assets/icons-c0ccf45c.svg#icon-select_arrow"></use>
+          </svg>
+        </div>
+        <label class="modal_label" for="date">На яку дату бронювати?</label>
+      </div>
+      <button class="modal_btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    
+    <!-- <script>
+      AOS.init();
+    </script> -->
+  </body>
+</html>
